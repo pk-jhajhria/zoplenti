@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box;
+}
+/* other classes */
+.cursor_pointer {
+  cursor: pointer;
+}
+.opacity_08 {
+  opacity: 0.8;
+}
+.transition_300 {
+  transition: all 300ms ease-in-out;
+}
+.outline_none {
+  outline: none;
+}
+.border_none {
+  border: none;
+}
+.z_index_1 {
+  z-index: 1;
+}
+.z_index_2 {
+  z-index: 2;
+}
+.z_index_3 {
+  z-index: 3;
+}
+.z_index_4 {
+  z-index: 4;
+}
+.z_index_5 {
+  z-index: 5;
+}
+.common_btn {
+  box-shadow: 0px 0px 31px 0px #02a9f782;
+  background-color: #070521;
+  border: 1px solid #02a9f7;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.common_btn:hover {
+  box-shadow: 0px 0px 12.003801345825195px 0px #02a9f782;
+  background-color: #02a9f7;
+  border: 1px solid #02a9f7;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+/* ======================= navbar =======================*/
+.nav_logo_shadow {
+  text-shadow: 0px 1.2456979751586914px 4.359943389892578px 0px #00000040;
+}
+
+.nav_link_hover:hover {
+  opacity: 1 !important;
+  color: white;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.5px;
+}
+.nav_btn {
+  box-shadow: 0px 0px 11px 0px #02a9f754;
+  background-color: #022537;
+  border: 1px solid #02a9f7;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.nav_btn:hover {
+  box-shadow: 0px 0px 21px 0px #02a9f782;
+  background-color: #070521;
+  border: 1px solid transparent;
+}
+.line_1 {
+  width: 35px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.line_2 {
+  width: 35px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.line_3 {
+  width: 35px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.hero_bg_img {
+  background-image: url(../images/png/hero-bg-img.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+/* ======================================= hero section ==================================== */
+.after_hero_bg_circle::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/png/hero-circle-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -100%;
+  width: 110%;
+  height: 232.22119140625px;
+}
+.hero_icon_custom {
+  width: 138px;
+  height: 111px;
+}
+.counter_box {
+  background: #56c4ff2e;
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  #OpenNav {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    top: 0;
+    left: -100%;
+    transition: ease-in-out 400ms;
+    z-index: 10;
+  }
+  .ShowNav {
+    left: 0% !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero_icon_custom {
+    width: 30%;
+    height: 70%;
+  }
+  .after_hero_bg_circle::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/hero-circle-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    width: 100%;
+    bottom: -80%;
+  }
+}
+@media (max-width: 576px) {
+  .hero_icon_custom {
+    width: 30%;
+    height: 70%;
+  }
+  .after_hero_bg_circle::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/hero-circle-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    width: 100%;
+    bottom: -100%;
+  }
+}
+@media (max-width: 420px) {
+  .hero_icon_custom {
+    width: 30%;
+    height: 70%;
+  }
+  .after_hero_bg_circle::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/png/hero-circle-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    width: 100%;
+    bottom: -150%;
+  }
+}
