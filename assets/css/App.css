@@ -306,6 +306,24 @@
   transform: translateY(-50%);
   width: 12% !important;
 }
+/* ==================================== Faq =================================== */
+.accordion {
+  --bs-accordion-btn-color: #ffffff !important;
+  --bs-accordion-btn-bg: #000000 !important;
+  --bs-accordion-btn-focus-box-shadow: transparent !important;
+  --bs-accordion-active-color: white !important;
+  --bs-accordion-active-bg: transparent !important;
+}
+.accordion-button::after {
+  background-image: url(../images/svg/plus-icon.svg) !important;
+}
+.faq_border_bottom {
+  border-bottom: 1px solid #016594 !important;
+}
+.faq_bg_hover:hover {
+  background-color: #2b3940a5 !important;
+}
+
 /*  ================================= Footer ================================== */
 .footer_btn {
   box-shadow: 0px 0px 11px 0px #02a9f782;
