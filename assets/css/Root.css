@@ -60,6 +60,7 @@
   --text-dark-gray: #9cabaf;
   /* bg-color */
   --bg-dark: #000000;
+  --bg-secondary: #020f29;
 }
 /* font-size */
 .fs_xsm {
@@ -128,7 +129,9 @@
 .bg_dark {
   background-color: var(--bg-dark);
 }
-
+.bg_secondary {
+  background-color: var(--bg-secondary);
+}
 /* media-quearys */
 @media (max-width: 1440px) {
   :root {
@@ -171,7 +174,7 @@
     --fs-md: 20px;
     --fs-xl: 22px;
     --fs-2xl: 24px;
-    --fs-2xxl: 28px;
+    --fs-2xxl: 23px;
     --fs-3xl: 34px;
     --fs-3xxl: 38px;
     --fs-4xl: 48px;
@@ -187,7 +190,7 @@
     --fs-md: 20px;
     --fs-xl: 22px;
     --fs-2xl: 24px;
-    --fs-2xxl: 28px;
+    --fs-2xxl: 20px;
     --fs-3xl: 34px;
     --fs-3xxl: 38px;
     --fs-4xl: 48px;
@@ -199,13 +202,13 @@
     /* font-size */
     --fs-xsm: 14px;
     --fs-base: 11px;
-    --fs-sm: 18px;
+    --fs-sm: 15px;
     --fs-md: 20px;
     --fs-xl: 17px;
-    --fs-2xl: 20px;
-    --fs-2xxl: 28px;
+    --fs-2xl: 18px;
+    --fs-2xxl: 21px;
     --fs-3xl: 34px;
-    --fs-3xxl: 38px;
+    --fs-3xxl: 30px;
     --fs-4xl: 32px;
     --fs-5xl: 54px;
   }
