@@ -103,7 +103,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
 }
 /* ======================================= hero section ==================================== */
 .after_hero_bg_circle::after {
@@ -119,16 +118,147 @@
 }
 .hero_icon_custom {
   width: 138px;
-  height: 111px;
+  height: 121px;
 }
 .counter_box {
-  background: #56c4ff2e;
+  background: #56c4ff23;
+  backdrop-filter: blur(4px);
+}
+.down_arrow_btn {
+  width: 52px;
+  height: 52px;
+}
+/* ============================================== Trusted ========================================= */
+.left_trusted_line::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 2px;
+  background-color: #02a9f7;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22%;
+}
+.right_trusted_line::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 2px;
+  background-color: #02a9f7;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22%;
+}
+.trusted_logo {
+  width: 135px;
+  height: 50px;
+}
+.slider_autoplay {
+  animation: autoplay 12s linear infinite;
+}
+.max_width_slider {
+  max-width: 1132px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes autoplay {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 1920px) {
+  .min_vh_100 {
+    min-height: 100vh;
+  }
+  .left_trusted_line::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -62%;
+  }
+  .right_trusted_line::before {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -62%;
+  }
 }
 @media (max-width: 1440px) {
+  .left_trusted_line::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -55%;
+  }
+  .right_trusted_line::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -55%;
+  }
 }
 @media (max-width: 1200px) {
+  .left_trusted_line::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50%;
+  }
+  .right_trusted_line::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50%;
+  }
 }
 @media (max-width: 992px) {
+  .left_trusted_line::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40%;
+  }
+  .right_trusted_line::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40%;
+  }
   #OpenNav {
     position: absolute;
     width: 100%;
@@ -144,6 +274,26 @@
   }
 }
 @media (max-width: 768px) {
+  .left_trusted_line::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30%;
+  }
+  .right_trusted_line::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background-color: #02a9f7;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30%;
+  }
   .hero_icon_custom {
     width: 30%;
     height: 70%;
@@ -160,6 +310,18 @@
   }
 }
 @media (max-width: 576px) {
+  .left_trusted_line::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 30px;
+    background-color: #02a9f7;
+  }
+  .right_trusted_line::before {
+    display: none;
+  }
   .hero_icon_custom {
     width: 30%;
     height: 70%;

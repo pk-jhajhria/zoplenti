@@ -20,7 +20,7 @@
   </head>
   <body class="bg_dark">
     <!-- ======================================= NavBar =============================== -->
-    <section class="hero_bg_img min-vh-100 d-flex flex-column">
+    <section class="hero_bg_img min_vh_100 d-flex flex-column">
       <nav class="py-lg-4 py-3 position-relative">
         <img
           class="position-absolute z_index_1 w-100 top-0 h-100"
@@ -198,13 +198,28 @@
       </nav>
       <!-- ==================================== Hero =================================== -->
       <section
-        class="flex-grow-1 d-flex flex-column justify-content-center align-items-center"
+        class="flex-grow-1 d-flex flex-column justify-content-center align-items-center position-relative"
       >
-        <div class="container">
+        <img
+          class="position-absolute start-0 z_index_1"
+          src="./assets/images/png/hero-left-z-icon.png"
+          alt="left-z-icon"
+        />
+        <img
+          class="position-absolute end-0 z_index_1"
+          src="./assets/images/png/hero-right-z-icon.png"
+          alt="right-z-icon"
+        />
+        <img
+          class="position-absolute w-100 bottom-0 z_index_2"
+          src="./assets/images/png/hero-down-layer.png"
+          alt="down-layer"
+        />
+        <div class="container z_index_2 position-relative">
           <div class="row justify-content-center">
             <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
               <h1
-                class="ff_Gilroy_Bold fw_bold fs_4xl text_white text-center mx-auto mb-0"
+                class="ff_Gilroy_Bold fw_bold fs_4xl text_white text-center mx-auto mb-0 mt-5"
               >
                 An Amazon partner you can actually
                 <span class="text_secondary">trust</span>
@@ -268,9 +283,118 @@
                 </div>
               </div>
             </div>
+            <span class="text-center mt-5 z_index_4 position-relative">
+              <img
+                class="cursor_pointer down_arrow_btn"
+                src="./assets/images/svg/down-arrow.svg"
+                alt="down_arrow"
+              />
+            </span>
           </div>
         </div>
       </section>
+    </section>
+    <!-- ======================================= Trusted ================================ -->
+    <section class="py-5 overflow-hidden">
+      <div class="container overflow-hidden">
+        <div class="d-flex justify-content-center">
+          <h2
+            style="letter-spacing: 2px"
+            class="text-center ff_Gilroy_medium fw_medium fs_md text_white mb-0 position-relative left_trusted_line right_trusted_line d-inline-block"
+          >
+            Trusted By Leading Brands
+          </h2>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center mt-5 slider_autoplay gap-5 max_width_slider"
+        >
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-1.png"
+            alt="trusted-1"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-2.png"
+            alt="trusted-2"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-3.png"
+            alt="trusted-3"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-4.png"
+            alt="trusted-4"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-5.png"
+            alt="trusted-5"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-6.png"
+            alt="trusted-6"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-7.png"
+            alt="trusted-7"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-8.png"
+            alt="trusted-8"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-9.png"
+            alt="trusted-9"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-10.png"
+            alt="trusted-10"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-11.png"
+            alt="trusted-11"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-12.png"
+            alt="trusted-12"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-13.png"
+            alt="trusted-13"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-14.png"
+            alt="trusted-14"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-15.png"
+            alt="trusted-15"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-16.png"
+            alt="trusted-16"
+          />
+          <img
+            class="trusted_logo"
+            src="./assets/images/png/trusted-17.png"
+            alt="trusted-17"
+          />
+        </div>
+      </div>
     </section>
     <script>
       const OpenNav = document.getElementById("OpenNav");
