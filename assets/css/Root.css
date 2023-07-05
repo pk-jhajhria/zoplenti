@@ -140,13 +140,13 @@
     --fs-base: 16px;
     --fs-sm: 18px;
     --fs-md: 20px;
-    --fs-xl: 22px;
+    --fs-xl: 18px;
     --fs-2xl: 24px;
     --fs-2xxl: 28px;
     --fs-3xl: 34px;
     --fs-3xxl: 38px;
     --fs-4xl: 48px;
-    --fs-5xl: 54px;
+    --fs-5xl: 45px;
   }
 }
 @media (max-width: 1200px) {
@@ -156,13 +156,13 @@
     --fs-base: 16px;
     --fs-sm: 18px;
     --fs-md: 20px;
-    --fs-xl: 22px;
+    --fs-xl: 16px;
     --fs-2xl: 24px;
     --fs-2xxl: 28px;
     --fs-3xl: 34px;
     --fs-3xxl: 38px;
     --fs-4xl: 48px;
-    --fs-5xl: 54px;
+    --fs-5xl: 40px;
   }
 }
 @media (max-width: 992px) {

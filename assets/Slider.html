@@ -11,93 +11,218 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slick theam min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/App.css" />
   </head>
   <body>
-    <section class="bg-black">
+    <section class="my-sm-5 py-sm-5 bg-black">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7 position-relative">
-            <div class="slideshow-container">
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-              <div class="mySlides">
-                <div class="text-center">
-                  <img
-                    class="cursor_pointer"
-                    src="../assets/images/png/slieder-66.png"
-                    alt="trusted-1"
-                  />
-                  <p
-                    class="ff_Gilroy_regular fw_normal fs_xl mb-0 text-white px-4 mt-4"
-                  >
-                    Magna augue maecenas aliquet sit. Libero risus feugiat lacus
+        <div class="row justify-content-center position-relative">
+          <div class="col-lg-8">
+            <svg
+              class="position-absolute top-50 start-0 ms-4 d-none d-md-flex translate-middle-y prev-btn cursor_pointer z_index_5"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="-0.5"
+                y="0.5"
+                width="40"
+                height="40"
+                rx="20"
+                transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+                fill="white"
+                fill-opacity="0.1"
+              />
+              <path
+                d="M24.8594 26.6289C25.0885 26.3997 25.2031 26.1081 25.2031 25.7539C25.2031 25.3997 25.0885 25.1081 24.8594 24.8789L19.9844 20.0039L24.8594 15.1289C25.0885 14.8997 25.2031 14.6081 25.2031 14.2539C25.2031 13.8997 25.0885 13.6081 24.8594 13.3789C24.6302 13.1497 24.3385 13.0352 23.9844 13.0352C23.6302 13.0352 23.3385 13.1497 23.1094 13.3789L17.3594 19.1289C17.2344 19.2539 17.1456 19.3893 17.0931 19.5352C17.0406 19.681 17.0148 19.8372 17.0156 20.0039C17.0156 20.1706 17.0419 20.3268 17.0944 20.4727C17.1469 20.6185 17.2352 20.7539 17.3594 20.8789L23.1094 26.6289C23.3385 26.8581 23.6302 26.9727 23.9844 26.9727C24.3385 26.9727 24.6302 26.8581 24.8594 26.6289Z"
+                fill="white"
+              />
+              <rect
+                x="-0.5"
+                y="0.5"
+                width="40"
+                height="40"
+                rx="20"
+                transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+                stroke="white"
+              />
+            </svg>
+            <svg
+              class="position-absolute top-50 end-0 me-4 d-none d-md-flex translate-middle-y next-btn cursor_pointer z_index_5"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.734375"
+                y="0.00390625"
+                width="41"
+                height="41"
+                rx="20.5"
+                fill="#02A9F7"
+              />
+              <path
+                d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
+                fill="white"
+              />
+            </svg>
+            <div class="responsive mx-auto">
+              <div
+                class="d-flex flex-column align-items-center justify-content-center py-5"
+              >
+                <img
+                  class="mb-2"
+                  src="./images/png/slieder-66.png"
+                  alt="icon"
+                />
+                <p
+                  class="ff_gilroy_regular text_2xl text-white text-center mb-0"
+                >
+                  Magna augue maecenas aliquet sit. Libero risus feugiat lacus
+                  <span class="d-xl-block">
                     vestibulum habitant proin. Nec eu in a elementum molestie
-                    consectetur massa pharetra. Lorem non id at sed sed leo
-                    nulla pharetra. Gravida erat viverra pellentesque eget
-                    imperdiet.
-                  </p>
-                  <p
-                    class="ff_Gilroy_medium fw_medium fs_2xxl text-white mb-0 mt-4"
+                    consectetur</span
                   >
-                    Elsa Weimann
-                  </p>
-                  <p
-                    class="ff_Gilroy_regular fw_normal fs_sm text-white mb-0 mt-1"
+                  <span class="d-xl-block">
+                    massa pharetra. Lorem non id at sed sed leo nulla pharetra.
+                    Gravida</span
                   >
-                    Manager, CEO
-                  </p>
-                </div>
+                  erat viverra pellentesque eget imperdiet.
+                </p>
+                <p
+                  class="ff_gilroy_medium text_2xl text-white text-center mb-0 mt-4"
+                >
+                  Elsa Weimann
+                </p>
+                <p
+                  style="color: #cccccc"
+                  class="ff_gilroy_regular text_sm text-center mt-2"
+                >
+                  Manager, CEO
+                </p>
               </div>
-              <div class="mySlides">
-                <div class="text-center">
-                  <img
-                    class="cursor_pointer"
-                    src="../assets/images/png/slieder-66.png"
-                    alt="trusted-1"
-                  />
-                  <p
-                    class="ff_Gilroy_regular fw_normal fs_xl mb-0 text-white px-4 mt-4"
-                  >
-                    Magna augue maecenas aliquet sit. Libero risus feugiat lacus
+              <div
+                class="d-flex flex-column align-items-center justify-content-center py-5"
+              >
+                <img
+                  class="mb-2"
+                  src="./images/png/slieder-66.png"
+                  alt="icon"
+                />
+                <p
+                  class="ff_gilroy_regular text_2xl text-white text-center mb-0"
+                >
+                  Magna augue maecenas aliquet sit. Libero risus feugiat lacus
+                  <span class="d-xl-block">
                     vestibulum habitant proin. Nec eu in a elementum molestie
-                    consectetur massa pharetra. Lorem non id at sed sed leo
-                    nulla pharetra. Gravida erat viverra pellentesque eget
-                    imperdiet.
-                  </p>
-                  <p
-                    class="ff_Gilroy_medium fw_medium fs_2xxl text-white mb-0 mt-4"
+                    consectetur</span
                   >
-                    Elsa Weimann
-                  </p>
-                  <p
-                    class="ff_Gilroy_regular fw_normal fs_sm text-white mb-0 mt-1"
+                  <span class="d-xl-block">
+                    massa pharetra. Lorem non id at sed sed leo nulla pharetra.
+                    Gravida</span
                   >
-                    Manager, CEO
-                  </p>
-                </div>
+                  erat viverra pellentesque eget imperdiet.
+                </p>
+                <p
+                  class="ff_gilroy_medium text_2xl text-white text-center mb-0 mt-4"
+                >
+                  Elsa Weimann
+                </p>
+                <p
+                  style="color: #cccccc"
+                  class="ff_gilroy_regular text_sm text-center mt-2"
+                >
+                  Manager, CEO
+                </p>
               </div>
-              <div class="mySlides">
-                <div class="text-center">
-                  <img
-                    class="cursor_pointer"
-                    src="../assets/images/png/slieder-66.png"
-                    alt="trusted-1"
-                  />
-                  <p
-                    class="ff_Gilroy_regular fw_normal fs_xl mb-0 text-white px-4 mt-4"
-                  >
-                    Magna augue maecenas aliquet sit. Libero risus feugiat lacus
+              <div
+                class="d-flex flex-column align-items-center justify-content-center py-5"
+              >
+                <img
+                  class="mb-2"
+                  src="./images/png/slieder-66.png"
+                  alt="icon"
+                />
+                <p
+                  class="ff_gilroy_regular text_2xl text-white text-center mb-0"
+                >
+                  Magna augue maecenas aliquet sit. Libero risus feugiat lacus
+                  <span class="d-xl-block">
                     vestibulum habitant proin. Nec eu in a elementum molestie
-                    consectetur massa pharetra. Lorem non id at sed sed leo
-                    nulla pharetra. Gravida erat viverra pellentesque eget
-                    imperdiet.
-                  </p>
-                  <p
-                    class="ff_Gilroy_regular fw_normal fs_sm text-white mb-0 mt-1"
+                    consectetur</span
                   >
-                    Manager, CEO
-                  </p>
-                </div>
+                  <span class="d-xl-block">
+                    massa pharetra. Lorem non id at sed sed leo nulla pharetra.
+                    Gravida</span
+                  >
+                  erat viverra pellentesque eget imperdiet.
+                </p>
+                <p
+                  class="ff_gilroy_medium text_2xl text-white text-center mb-0 mt-4"
+                >
+                  Elsa Weimann
+                </p>
+                <p
+                  style="color: #cccccc"
+                  class="ff_gilroy_regular text_sm text-center mt-2"
+                >
+                  Manager, CEO
+                </p>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center justify-content-center py-5"
+              >
+                <img
+                  class="mb-2"
+                  src="./images/png/slieder-66.png"
+                  alt="icon"
+                />
+                <p
+                  class="ff_gilroy_regular text_2xl text-white text-center mb-0"
+                >
+                  Magna augue maecenas aliquet sit. Libero risus feugiat lacus
+                  <span class="d-xl-block">
+                    vestibulum habitant proin. Nec eu in a elementum molestie
+                    consectetur</span
+                  >
+                  <span class="d-xl-block">
+                    massa pharetra. Lorem non id at sed sed leo nulla pharetra.
+                    Gravida</span
+                  >
+                  erat viverra pellentesque eget imperdiet.
+                </p>
+                <p
+                  class="ff_gilroy_medium text_2xl text-white text-center mb-0 mt-4"
+                >
+                  Elsa Weimann
+                </p>
+                <p
+                  style="color: #cccccc"
+                  class="ff_gilroy_regular text_sm text-center mt-2"
+                >
+                  Manager, CEO
+                </p>
               </div>
             </div>
           </div>
@@ -105,7 +230,7 @@
       </div>
     </section>
 
-    <script>
+    <!-- <script>
       var slideIndex = 7;
       showSlides(slideIndex);
 
@@ -141,11 +266,70 @@
           plusSlides(1);
         }, 3000);
       };
-    </script>
+    </script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- slick min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(".responsive").slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              dots: true,
+            },
+          },
+        ],
+      });
+
+      $(".prev-btn").click(function () {
+        $(".responsive").slick("slickPrev");
+      });
+
+      $(".next-btn").click(function () {
+        $(".responsive").slick("slickNext");
+      });
+    </script>
   </body>
 </html>
