@@ -1,20 +1,7 @@
-.slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: white !important;
-}
-.slick-dots li button:before {
-  font-family: slick;
-  font-size: 15px !important;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: "•";
-  text-align: center;
-  opacity: 0.25;
-  color: gray !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.lottie_img {
+  background-image: url(../images/png/hero-blue-fire.png);
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

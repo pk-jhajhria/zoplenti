@@ -24,6 +24,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- aos-link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
     <!-- slick theam min css -->
     <link
@@ -35,6 +38,7 @@
     />
   </head>
   <body class="bg_dark">
+    <a id="back_to_top" href="#"><img style="width: 100%;"class="mb-1" src="./assets/images/png/btop.png" alt="icon"></a>
     <!-- ======================================= NavBar =============================== -->
     <section class="hero_bg_img min_vh_100 d-flex flex-column">
       <nav class="py-lg-4 py-3 position-relative">
@@ -43,7 +47,7 @@
           src="./assets/images/png/navbar-uper-layer.png"
           alt="uper_layer"
         />
-        <div class="container z_index_4 position-relative">
+        <div class="container z_index_ position-relative">
           <div class="d-flex justify-content-between align-items-center">
             <div
               class="d-flex align-items-center cursor_pointer z_index_2 position-relative"
@@ -66,8 +70,9 @@
               <span class="line_3"></span>
             </div>
             <ul
-              class="d-flex align-items-center gap-4 mb-0 ps-0 d-none d-lg-flex"
+              class="d-flex align-items-center gap-4 mb-0 ps-0 d-none d-lg-flex z_index_4 position-relative"
             >
+          <img onclick="menu()" class=" d-lg-none" src="./assets/images/svg/cross_icon.svg" alt="icon">
               <li>
                 <a
                   class="ff_Gilroy_regular fw_normal fs_base text_white opacity_08 nav_link_hover transition_300"
@@ -125,7 +130,7 @@
               </li>
             </ul>
             <button
-              class="ff_Gilroy_medium fw_medium fs_base text_white nav_btn outline_none rounded-2 transition_300 d-none d-lg-block"
+              class="ff_Gilroy_medium fw_medium fs_base text_white nav_btn outline_none rounded-2 transition_300 d-none d-lg-block z_index_4 position-relative"
             >
               <img
                 class="me-2"
@@ -271,7 +276,7 @@
                 />
               </div>
             <div class="row justify-content-between mt-5 rounded-3 counter_box">
-                <div class="col-xl-4 col-lg-3">
+                <div class="col-4 text-center text-sm-start">
                   <div class="d-flex flex-column align-items-center justify-content-center">
                     <i class="fa fa-user invisible"></i>
                     <h2
@@ -287,7 +292,7 @@
                     </h2>
                   </div>
                 </div>
-                <div class="col-lg-4 mt-5 mt-lg-0">
+                <div class="col-4 text-center text-sm-start">
                   <div class="d-flex flex-column align-items-center justify-content-center">
                     <i class="fa fa-code invisible"></i>
                     <h2
@@ -303,7 +308,7 @@
                     </h2>
                   </div>
                 </div>
-                <div class="col-lg-4 mt-5 mt-lg-0">
+                <div class="col-4 text-center text-sm-start">
                   <div class="d-flex flex-column align-items-center">
                     <i class="fa fa-lock invisible"></i>
                     <h2
@@ -480,58 +485,64 @@
             Message to Future Partners
           </h2>
           <div
-            class="ps-sm-5 ps-3 ms-sm-5 mt-sm-5 pt-sm-4 pt-2 me-sm-5 pe-sm-5 pe-2 pb-sm-5 pb-3 z_index_3 position-relative"
+          
+            class="ps-md-5 ps-3 ms-md-5 mt-md-5 pt-md-4 pt-2 me-md-5 pe-md-5 pe-2 pb-md-5 pb-3 z_index_3 position-relative"
           >
-            <h3
-              class="text_white ff_Gilroy_Bold fw_bold fs_2xl max_width_450 mb-0"
-            >
-              What could the right
-              <span class="text_secondary">Amazon partner</span> do for your
-              brand?
-            </h3>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 pe-sm-5 mt-2 pt-1"
-            >
-              When it comes to Amazon sellers, brands like yours are wary, and
-              for good reason.
-              <span class="fw_bold"
-                >It’s hard to find someone you can trust.</span
+            <div data-aos="fade-up"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"
+     data-aos-duration="1000">
+              <h3
+                class="text_white ff_Gilroy_Bold fw_bold fs_2xl max_width_450 mb-0"
               >
-            </p>
-            <div class="d-flex">
-              <span class="white_dot mt-4"></span>
+                What could the right
+                <span class="text_secondary">Amazon partner</span> do for your
+                brand?
+              </h3>
               <p
-                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 pe-sm-5 mt-2 pt-1"
               >
-                Trust to actually add value to your brand by positioning it the
-                right way, so that you can gain market share…
+                When it comes to Amazon sellers, brands like yours are wary, and
+                for good reason.
+                <span class="fw_bold"
+                  >It’s hard to find someone you can trust.</span
+                >
+              </p>
+              <div class="d-flex">
+                <span class="white_dot mt-4"></span>
+                <p
+                  class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
+                >
+                  Trust to actually add value to your brand by positioning it the
+                  right way, so that you can gain market share…
+                </p>
+              </div>
+              <div class="d-flex">
+                <span class="white_dot mt-4"></span>
+                <p
+                  class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
+                >
+                  Trust to work within your reseller policies and respect your MAP
+                  instead of driving the price to the ground…
+                </p>
+              </div>
+              <div class="d-flex">
+                <span class="white_dot mt-4"></span>
+                <p
+                  class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
+                >
+                  Trust to represent your brand properly with customers, instead
+                  of getting them angry (with you!)…
+                </p>
+              </div>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-3 me-sm-5"
+              >
+                In a nutshell, trust not to damage your brand
+                <span class="fw_bold">just to make a quick buck.</span>
               </p>
             </div>
-            <div class="d-flex">
-              <span class="white_dot mt-4"></span>
-              <p
-                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
-              >
-                Trust to work within your reseller policies and respect your MAP
-                instead of driving the price to the ground…
-              </p>
-            </div>
-            <div class="d-flex">
-              <span class="white_dot mt-4"></span>
-              <p
-                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
-              >
-                Trust to represent your brand properly with customers, instead
-                of getting them angry (with you!)…
-              </p>
-            </div>
-
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-3 me-sm-5"
-            >
-              In a nutshell, trust not to damage your brand
-              <span class="fw_bold">just to make a quick buck.</span>
-            </p>
             <span class="d-flex justify-content-center py-sm-4 py-2 my-3">
               <img
                 class="dashed_line"
@@ -539,75 +550,43 @@
                 alt="dashed_line"
               />
             </span>
-            <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
-              So you are very careful. And you should be.
-            </h3>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
-            >
-              In fact, if you are like most brands we talk to, you are
-              struggling to find the right path to distribute your product on
-              Amazon — because the cost of trusting the wrong partner can be
-              huge.
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-sm-3 mt-2 pt-sm-1"
-            >
-              But Amazon matters, for any brand, and not just in
-              <span class="fw_bold">terms of online sales.</span>
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-sm-3 mt-2 pt-sm-1"
-            >
-              More often than not, online is where your brand makes its first
-              impression with new customers. In 2023, you cannot ignore it — and
-              getting things wrong can be an expensive mistake.
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-sm-3 mt-2 pt-sm-1"
-            >
-              Succeeding online is hard. But with the right partner, the
-              benefits for your brand can be enormous, both
-              <span class="fw_bold">online and in brick-and-mortar.</span>
-            </p>
-            <span class="d-flex justify-content-center py-4 my-sm-3">
-              <img
-                class="dashed_line"
-                src="./assets/images/png/dashed-line.png"
-                alt="dashed_line"
-              />
-            </span>
-            <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
-              At Zoplenti, we believe we are that partner.
-            </h3>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-sm-1"
-            >
-              But words, we know, are cheap.
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-2 pt-sm-1"
-            >
-              Do we respect your MAP and brand guidelines? Yes. Do we leverage
-              our 7 years of experience in online retail to grow your brand and
-              increase your market share? Of course.
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-sm-1"
-            >
-              <span class="fw_bold text_underline_after position-relative pb-1"
-                >We do all those things, and more.</span
+            <div data-aos="fade-up"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="500"
+     data-aos-offset="0"
+     data-aos-duration="1000">
+              <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
+                So you are very careful. And you should be.
+              </h3>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
               >
-              But everybody can say that (and unfortunately, they do!).
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-2 pt-sm-1"
-            >
-              In a space filled with big proclamations, we like to keep it
-              simple.  We purchase your products, go the extra mile to market
-              them the way your brand deserves, and sell them to our customers.
-              Plain and simple.
-            </p>
+                In fact, if you are like most brands we talk to, you are
+                struggling to find the right path to distribute your product on
+                Amazon — because the cost of trusting the wrong partner can be
+                huge.
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-sm-3 mt-2 pt-sm-1"
+              >
+                But Amazon matters, for any brand, and not just in
+                <span class="fw_bold">terms of online sales.</span>
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-sm-3 mt-2 pt-sm-1"
+              >
+                More often than not, online is where your brand makes its first
+                impression with new customers. In 2023, you cannot ignore it — and
+                getting things wrong can be an expensive mistake.
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-sm-3 mt-2 pt-sm-1"
+              >
+                Succeeding online is hard. But with the right partner, the
+                benefits for your brand can be enormous, both
+                <span class="fw_bold">online and in brick-and-mortar.</span>
+              </p>
+            </div>
             <span class="d-flex justify-content-center py-4 my-sm-3">
               <img
                 class="dashed_line"
@@ -615,86 +594,142 @@
                 alt="dashed_line"
               />
             </span>
-            <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
-              Our vision is to set the benchmark for what a great retail partner
-              should be.
-            </h3>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
-            >
-              That’s why we only reach out to brands if we see a
-              <span class="fw_bold">strong opportunity</span> based on our
-              customer data and market conditions — we select based on the
-              possible upside for both partners. If we form a partnership, it’s
-              because we are <span class="fw_bold">fully committed</span> to
-              doing the hard work, doing it right, and bringing results.
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
-            >
-              At our core, we are a family-run business,
-              <span class="fw_bold">inspired by generations of retail</span>
-              experience. We strive to do right by our customers, our partner
-              brands, and our team. Why? Because we think that’s the only way to
-              build something that <span class="fw_bold">lasts long-term.</span>
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
-            >
-              If that’s what you look for in a retail partner, I hope you’ll
-              take the time to read more
-              <span class="position-relative">
-                <a
-                  class="text_bg_color rounded-2 px-1 text_white white_space_nowrap"
-                  href="#"
-                  >about us</a
+            <div data-aos="fade-up"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="800"
+     data-aos-offset="0"
+     data-aos-duration="1000">
+              <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
+                At Zoplenti, we believe we are that partner.
+              </h3>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-sm-1"
+              >
+                But words, we know, are cheap.
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-2 pt-sm-1"
+              >
+                Do we respect your MAP and brand guidelines? Yes. Do we leverage
+                our 7 years of experience in online retail to grow your brand and
+                increase your market share? Of course.
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-sm-1"
+              >
+                <span class="fw_bold text_underline_after position-relative pb-1"
+                  >We do all those things, and more.</span
                 >
-                <img
-                  class="position-absolute about_cursor_img_position"
-                  src="./assets/images/svg/cursor_img.svg"
-                  alt="cursor_img"
-              /></span>
-              and
-              <span class="position-relative">
-                <a
-                  class="text_bg_color rounded-2 px-1 text_white white_space_nowrap"
-                  href="#"
-                  >how we work.</a
-                >
-                <img
-                  class="position-absolute cursor_img_position"
-                  src="./assets/images/svg/cursor_img.svg"
-                  alt="cursor_img"
-              /></span>
-            </p>
-            <p
-              class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
-            >
-              We’re all looking forward to working with you.
-            </p>
-            <img
-              class="mt-sm-5 pt-sm-5 pt-4"
-              src="./assets/images/svg/sign.svg"
-              alt="sign"
-            />
-            <p class="mb-0 ff_Gilroy_regular fw_normal fs_base text_white mt-2">
-              Steven Hollander
-            </p>
-            <p class="mb-0 ff_Gilroy_regular fw_normal fs_base text_white">
-              Founder & CEO
-            </p>
-            <p
-              style="max-width: 527px"
-              class="ff_Gilroy_medium fw_medium fs_2xl text_white pb-sm-5 mt-sm-4 mt-3 pt-sm-2"
-            >
-              Your products & brand + our custom strategy = everyone's success
-            </p>
+                But everybody can say that (and unfortunately, they do!).
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-2 pt-sm-1"
+              >
+                In a space filled with big proclamations, we like to keep it
+                simple.  We purchase your products, go the extra mile to market
+                them the way your brand deserves, and sell them to our customers.
+                Plain and simple.
+              </p>
+            </div>
+            <span class="d-flex justify-content-center py-4 my-sm-3">
+              <img
+                class="dashed_line"
+                src="./assets/images/png/dashed-line.png"
+                alt="dashed_line"
+              />
+            </span>
+            <div data-aos="fade-up"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="1000"
+     data-aos-offset="0"
+     data-aos-duration="1000">
+              <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
+                Our vision is to set the benchmark for what a great retail partner
+                should be.
+              </h3>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
+              >
+                That’s why we only reach out to brands if we see a
+                <span class="fw_bold">strong opportunity</span> based on our
+                customer data and market conditions — we select based on the
+                possible upside for both partners. If we form a partnership, it’s
+                because we are <span class="fw_bold">fully committed</span> to
+                doing the hard work, doing it right, and bringing results.
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
+              >
+                At our core, we are a family-run business,
+                <span class="fw_bold">inspired by generations of retail</span>
+                experience. We strive to do right by our customers, our partner
+                brands, and our team. Why? Because we think that’s the only way to
+                build something that <span class="fw_bold">lasts long-term.</span>
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
+              >
+                If that’s what you look for in a retail partner, I hope you’ll
+                take the time to read more
+                <span class="position-relative">
+                  <a
+                    class="text_bg_color rounded-2 px-1 text_white white_space_nowrap"
+                    href="#"
+                    >about us</a
+                  >
+                  <img
+                    class="position-absolute about_cursor_img_position"
+                    src="./assets/images/svg/cursor_img.svg"
+                    alt="cursor_img"
+                /></span>
+                and
+                <span class="position-relative">
+                  <a
+                    class="text_bg_color rounded-2 px-1 text_white white_space_nowrap"
+                    href="#"
+                    >how we work.</a
+                  >
+                  <img
+                    class="position-absolute cursor_img_position"
+                    src="./assets/images/svg/cursor_img.svg"
+                    alt="cursor_img"
+                /></span>
+              </p>
+              <p
+                class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
+              >
+                We’re all looking forward to working with you.
+              </p>
+            </div>
+            <div data-aos="fade-up"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="1300"
+     data-aos-offset="0"
+     data-aos-duration="1500">
+              <img
+                class="mt-sm-5 pt-sm-5 pt-4"
+                src="./assets/images/svg/sign.svg"
+                alt="sign"
+              />
+              <p class="mb-0 ff_Gilroy_regular fw_normal fs_base text_white mt-2">
+                Steven Hollander
+              </p>
+              <p class="mb-0 ff_Gilroy_regular fw_normal fs_base text_white">
+                Founder & CEO
+              </p>
+              <p
+                style="max-width: 527px"
+                class="ff_Gilroy_medium fw_medium fs_2xl text_white pb-sm-5 mt-sm-4 mt-3 pt-sm-2"
+              >
+                Your products & brand + our custom strategy = everyone's success
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ===================================== Amazon ===================================== -->
-    <section class="py-5 overflow-hidden">
+    <section class="py-sm-5 pb-5 pb-sm-0 overflow-hidden">
       <div class="container">
         <div class="row justify-content-center position-relative">
           <img
@@ -712,7 +747,7 @@
             <div class="row z_index_4 position-relative">
               <div class="col-sm-6">
                 <div
-                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 overflow-hidden"
+                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 overflow-hidden text-center text-sm-start"
                 >
                   <h3
                     class="ff_Gilroy_semiBold fw_semibold fs_2xxl text_white mb-0 pb-3 amazon_line_height"
@@ -729,7 +764,7 @@
               </div>
               <div class="col-sm-6">
                 <div
-                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 mt-3 mt-sm-0 overflow-hidden"
+                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 mt-3 mt-sm-0 overflow-hidden text-center text-sm-start"
                 >
                   <h3
                     class="ff_Gilroy_semiBold fw_semibold fs_2xxl text_white mb-0 pb-3 amazon_line_height"
@@ -970,7 +1005,7 @@
     </section>
     <!-- ===================================== Faq ======================================= -->
     <section class="py-5">
-      <div class="container py-5">
+      <div class="container py-sm-5">
         <h2 class="text-center ff_Gilroy_Bold fw_bold fs_3xxl text_white mb-0">
           Frequently Asked <span class="text_secondary">Questions</span>
         </h2>
@@ -1409,12 +1444,15 @@
                         stroke="#02A9F7"
                       />
                     </svg>
-                    <h2
+                  <div class="d-flex align-items-center">
+                    <span class=" ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0 me-1">#</span>
+                      <h2
                       class=" ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0"
                       data-max="633"
                     >
-                      #
+                    
                     </h2>
+                  </div>
                     <h2
                       class="ff_Gilroy_regular fw_normal fs_xl text_light_gray pt-2"
                     >
@@ -1430,6 +1468,7 @@
     </section>
     <!-- ===================================== Footer ==================================== -->
     <section class="position-relative bg_secondary overflow-hidden">
+      <img class=" position-absolute bottom-0 start-0" src="./assets/images/png/footer-z-icon.png " alt="IMG">
       <span class="footer_blue_shadow_left position-absolute z_index_3"></span>
       <span class="footer_blue_shadow_right position-absolute z_index_3"></span>
       <footer
@@ -1438,14 +1477,14 @@
       >
         <div class="container py-sm-5">
           <div class="row justify-content-between">
-            <div class="col-xl-4 col-lg-3">
+            <div class="col-xl-4 col-lg-3 text-center text-sm-start">
               <img
                 class="cursor_pointer"
                 src="./assets/images/svg/footer-logo.svg"
                 alt="footer-logo"
               />
             </div>
-            <div class="col-xl-7 col-lg-8">
+            <div class="col-xl-7 col-lg-8 text-center text-sm-start">
               <div class="row mt-4 mt-lg-0">
                 <div class="col-md-4 col-6">
                   <p
@@ -1478,10 +1517,10 @@
                     Have a question?
                   </p>
                   <ul class="ps-0 mb-0 mt-2">
-                    <li
-                      class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray cursor_pointer footer_link_hover transition_300 d-inline-block"
-                    >
-                      <svg
+                  
+                  <a href="mailto:yourEmail@domain.com"> <li
+                      class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray cursor_pointer footer_link_hover transition_300 d-inline-block" >
+                     <svg
                         width="17"
                         height="17"
                         viewBox="0 0 17 17"
@@ -1495,9 +1534,10 @@
                           />
                         </g>
                       </svg>
-
+                  
                       partners@zoplenti.com
-                    </li>
+                    </li> 
+                   </a>
                     <li
                       class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray mt-1 cursor_pointer footer_link_hover transition_300 d-inline-block"
                     >
@@ -1537,7 +1577,7 @@
           </div>
         </div>
       </footer>
-      <section class="py-3 z_index_4 position-relative">
+      <section class="py-3 z_index_4 position-relative text-center text-sm-start">
         <div class="container">
           <div class="d-sm-flex justify-content-between">
             <p class="ff_Montserrat fw_normal fs_base mb-0 text_dark_gray">
@@ -1553,13 +1593,14 @@
       </section>
     </section>
 
+<!-- btop -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-
+    >
+  </script>
     <!-- slick min js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
@@ -1667,10 +1708,35 @@
         document.classList.toggle("cross");
       }
     </script>
+<!-- backToTop -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var backToTopButton = document.getElementById("back_to_top");
+        if (window.pageYOffset > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+      var backToTopButton = document.getElementById("back_to_top");
+      backToTopButton.addEventListener("click", scrollToTop);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- aos-script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
