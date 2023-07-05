@@ -25,8 +25,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- aos-link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- slick theam min css -->
     <link
@@ -38,10 +37,16 @@
     />
   </head>
   <body class="bg_dark">
-    <a id="back_to_top" href="#"><img style="width: 100%;"class="mb-1" src="./assets/images/png/btop.png" alt="icon"></a>
+    <a id="back_to_top" href="#"
+      ><img
+        style="width: 100%"
+        class="mb-1"
+        src="./assets/images/png/btop.png"
+        alt="icon"
+    /></a>
     <!-- ======================================= NavBar =============================== -->
     <section class="hero_bg_img min_vh_100 d-flex flex-column">
-      <nav class="py-lg-4 py-3 position-relative">
+      <nav class="py-lg-4 py-3 position-relative" id="nav">
         <img
           class="position-absolute z_index_1 w-100 top-0 h-100"
           src="./assets/images/png/navbar-uper-layer.png"
@@ -72,7 +77,12 @@
             <ul
               class="d-flex align-items-center gap-4 mb-0 ps-0 d-none d-lg-flex z_index_4 position-relative"
             >
-          <img onclick="menu()" class=" d-lg-none" src="./assets/images/svg/cross_icon.svg" alt="icon">
+              <img
+                onclick="menu()"
+                class="d-lg-none"
+                src="./assets/images/svg/cross_icon.svg"
+                alt="icon"
+              />
               <li>
                 <a
                   class="ff_Gilroy_regular fw_normal fs_base text_white opacity_08 nav_link_hover transition_300"
@@ -132,11 +142,18 @@
             <button
               class="ff_Gilroy_medium fw_medium fs_base text_white nav_btn outline_none rounded-2 transition_300 d-none d-lg-block z_index_4 position-relative"
             >
-              <img
-                class="me-2"
-                src="./assets/images/svg/nav-btn-logo.svg"
-                alt="nav-btn-img"
-              />
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.1922 17.8686C11.0347 18.0261 10.7547 18.0524 10.5709 17.8686C10.4889 17.786 10.4429 17.6744 10.4429 17.558C10.4429 17.4416 10.4889 17.33 10.5709 17.2474L13.5372 14.2811L12.3034 13.0474L9.33715 16.0136C9.1709 16.1886 8.8909 16.1799 8.7159 16.0136C8.63394 15.931 8.58794 15.8194 8.58794 15.703C8.58794 15.5866 8.63394 15.475 8.7159 15.3924L11.6822 12.4261L10.4484 11.1924L7.48215 14.1586C7.32466 14.3161 7.04465 14.3424 6.8609 14.1586C6.78079 14.075 6.73607 13.9637 6.73607 13.848C6.73607 13.7322 6.78079 13.6209 6.8609 13.5374L9.82715 10.5711L8.58465 9.33736L5.6184 12.3036C5.4609 12.4611 5.1809 12.4874 4.99715 12.3036C4.91704 12.22 4.87232 12.1087 4.87232 11.993C4.87232 11.8772 4.91704 11.7659 4.99715 11.6824L8.82965 7.84986L10.4659 9.47736C11.2972 10.3086 12.7322 10.2999 13.5634 9.47736C14.4209 8.61986 14.4209 7.23736 13.5634 6.37986L11.9359 4.75236L12.1809 4.50736C12.8634 3.82486 13.9747 3.82486 14.6572 4.50736L18.3672 8.21736C19.0497 8.89986 19.0497 10.0111 18.3672 10.6936L11.1922 17.8686ZM19.6009 11.9361C20.2564 11.2787 20.6245 10.3882 20.6245 9.45986C20.6245 8.53149 20.2564 7.64101 19.6009 6.98361L15.8909 3.27361C15.2335 2.6181 14.343 2.25 13.4147 2.25C12.4863 2.25 11.5958 2.6181 10.9384 3.27361L10.6934 3.51861L10.4484 3.27361C9.79101 2.6181 8.90052 2.25 7.97215 2.25C7.04379 2.25 6.1533 2.6181 5.4959 3.27361L2.3984 6.37111C1.80647 6.96102 1.44564 7.74361 1.38143 8.57684C1.31721 9.41007 1.55385 10.2387 2.0484 10.9124L3.31715 9.64361C3.14801 9.31335 3.08822 8.93788 3.14641 8.57141C3.2046 8.20495 3.37777 7.86647 3.6409 7.60486L6.7384 4.50736C7.42091 3.82486 8.53215 3.82486 9.21465 4.50736L12.3297 7.62236C12.4872 7.77986 12.5134 8.05986 12.3297 8.24361C12.1459 8.42736 11.8659 8.40111 11.7084 8.24361L8.82965 5.37361L3.75465 10.4399C2.89715 11.2886 2.89715 12.6799 3.75465 13.5374C4.0959 13.8786 4.5334 14.0886 4.99715 14.1499C5.05843 14.6204 5.27357 15.0574 5.60909 15.3929C5.9446 15.7284 6.38164 15.9436 6.85216 16.0049C6.91343 16.4754 7.12857 16.9124 7.46409 17.2479C7.7996 17.5834 8.23664 17.7986 8.70715 17.8599C8.7684 18.3324 8.9784 18.7611 9.31965 19.1024C9.7309 19.5136 10.2822 19.7411 10.8684 19.7411C11.4547 19.7411 12.0059 19.5136 12.4172 19.1024L19.6009 11.9361Z"
+                  fill="#02A9F7"
+                />
+              </svg>
               Work With Us
             </button>
           </div>
@@ -275,9 +292,13 @@
                   alt="fire"
                 />
               </div>
-            <div class="row justify-content-between mt-5 rounded-3 counter_box">
+              <div
+                class="row justify-content-between mt-5 rounded-3 counter_box"
+              >
                 <div class="col-4 text-center text-sm-start">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
                     <i class="fa fa-user invisible"></i>
                     <h2
                       class="ff_Gilroy_medium fw_medium fs_2xl mt-2 pt-1 text-white mb-0"
@@ -288,23 +309,25 @@
                     <h2
                       class="ff_Gilroy_regular fw_normal fs_base text_light_gray pt-2"
                     >
-                    Top Amazon Seller
+                      Top Amazon Seller
                     </h2>
                   </div>
                 </div>
                 <div class="col-4 text-center text-sm-start">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
                     <i class="fa fa-code invisible"></i>
                     <h2
-                      class=" ff_Gilroy_medium fw_medium fs_2xl mt-2 text-white mb-0"
+                      class="ff_Gilroy_medium fw_medium fs_2xl mt-2 text-white mb-0"
                       data-max="1000"
                     >
                       %
                     </h2>
                     <h2
-                      class=" ff_Gilroy_regular fw_normal fs_base text_light_gray pt-2"
+                      class="ff_Gilroy_regular fw_normal fs_base text_light_gray pt-2"
                     >
-                   Unique SKUs
+                      Unique SKUs
                     </h2>
                   </div>
                 </div>
@@ -312,7 +335,7 @@
                   <div class="d-flex flex-column align-items-center">
                     <i class="fa fa-lock invisible"></i>
                     <h2
-                      class=" ff_Gilroy_medium fw_medium fs_2xl mt-2 text-white mb-0"
+                      class="ff_Gilroy_medium fw_medium fs_2xl mt-2 text-white mb-0"
                       data-max="500"
                     >
                       k+
@@ -320,20 +343,21 @@
                     <h2
                       class="ff_Gilroy_regular fw_normal fs_base text_light_gray pt-2"
                     >
-                 Satisfied Customers 
+                      Satisfied Customers
                     </h2>
                   </div>
                 </div>
               </div>
-            </div> 
-            <a href="#trusted" 
-            class="text-center mt-5 z_index_4 position-relative">
+            </div>
+            <a
+              href="#trusted"
+              class="text-center mt-5 z_index_4 position-relative"
+            >
               <img
                 class="cursor_pointer down_arrow_btn"
                 src="./assets/images/svg/down-arrow.svg"
                 alt="down_arrow"
-              /></a>
-           
+            /></a>
           </div>
         </div>
       </section>
@@ -441,7 +465,7 @@
       </div>
     </section>
     <!-- ====================================== Message ================================ -->
-    <section class="py-5 position-relative overflow-hidden">
+    <section class="py-5 position-relative">
       <img
         style="top: 100px"
         class="position-absolute start-0 z_index_2"
@@ -473,26 +497,21 @@
       ></span>
       <div class="container py-sm-5 mt-sm-5 z_index_4 position-relative">
         <div class="message_bg pt-sm-5 position-relative">
-          <img
-            style="left: 45%; bottom: 4%"
-            class="position-absolute z_index_2"
-            src="./assets/images/png/message-center-vector.png"
-            alt="center"
-          />
           <h2
             class="ff_Gilroy_Bold fw_bold fs_3xxl text_white text-center pt-sm-5 pt-4"
           >
             Message to Future Partners
           </h2>
           <div
-          
             class="ps-md-5 ps-3 ms-md-5 mt-md-5 pt-md-4 pt-2 me-md-5 pe-md-5 pe-2 pb-md-5 pb-3 z_index_3 position-relative"
           >
-            <div data-aos="fade-up"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0"
-     data-aos-duration="1000">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               <h3
                 class="text_white ff_Gilroy_Bold fw_bold fs_2xl max_width_450 mb-0"
               >
@@ -514,8 +533,8 @@
                 <p
                   class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
                 >
-                  Trust to actually add value to your brand by positioning it the
-                  right way, so that you can gain market share…
+                  Trust to actually add value to your brand by positioning it
+                  the right way, so that you can gain market share…
                 </p>
               </div>
               <div class="d-flex">
@@ -523,8 +542,8 @@
                 <p
                   class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 mt-2 me-sm-5 ms-sm-3 ms-2"
                 >
-                  Trust to work within your reseller policies and respect your MAP
-                  instead of driving the price to the ground…
+                  Trust to work within your reseller policies and respect your
+                  MAP instead of driving the price to the ground…
                 </p>
               </div>
               <div class="d-flex">
@@ -550,11 +569,13 @@
                 alt="dashed_line"
               />
             </span>
-            <div data-aos="fade-up"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="500"
-     data-aos-offset="0"
-     data-aos-duration="1000">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="500"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
                 So you are very careful. And you should be.
               </h3>
@@ -576,8 +597,8 @@
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-sm-3 mt-2 pt-sm-1"
               >
                 More often than not, online is where your brand makes its first
-                impression with new customers. In 2023, you cannot ignore it — and
-                getting things wrong can be an expensive mistake.
+                impression with new customers. In 2023, you cannot ignore it —
+                and getting things wrong can be an expensive mistake.
               </p>
               <p
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-sm-3 mt-2 pt-sm-1"
@@ -594,11 +615,13 @@
                 alt="dashed_line"
               />
             </span>
-            <div data-aos="fade-up"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="800"
-     data-aos-offset="0"
-     data-aos-duration="1000">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="800"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
                 At Zoplenti, we believe we are that partner.
               </h3>
@@ -611,13 +634,14 @@
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 pe-sm-5 mt-2 pt-sm-1"
               >
                 Do we respect your MAP and brand guidelines? Yes. Do we leverage
-                our 7 years of experience in online retail to grow your brand and
-                increase your market share? Of course.
+                our 7 years of experience in online retail to grow your brand
+                and increase your market share? Of course.
               </p>
               <p
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-sm-1"
               >
-                <span class="fw_bold text_underline_after position-relative pb-1"
+                <span
+                  class="fw_bold text_underline_after position-relative pb-1"
                   >We do all those things, and more.</span
                 >
                 But everybody can say that (and unfortunately, they do!).
@@ -627,8 +651,8 @@
               >
                 In a space filled with big proclamations, we like to keep it
                 simple.  We purchase your products, go the extra mile to market
-                them the way your brand deserves, and sell them to our customers.
-                Plain and simple.
+                them the way your brand deserves, and sell them to our
+                customers. Plain and simple.
               </p>
             </div>
             <span class="d-flex justify-content-center py-4 my-sm-3">
@@ -638,14 +662,16 @@
                 alt="dashed_line"
               />
             </span>
-            <div data-aos="fade-up"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="1000"
-     data-aos-offset="0"
-     data-aos-duration="1000">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="1000"
+              data-aos-offset="0"
+              data-aos-duration="1000"
+            >
               <h3 class="text_white ff_Gilroy_Bold fw_bold fs_2xl mb-0">
-                Our vision is to set the benchmark for what a great retail partner
-                should be.
+                Our vision is to set the benchmark for what a great retail
+                partner should be.
               </h3>
               <p
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
@@ -653,9 +679,10 @@
                 That’s why we only reach out to brands if we see a
                 <span class="fw_bold">strong opportunity</span> based on our
                 customer data and market conditions — we select based on the
-                possible upside for both partners. If we form a partnership, it’s
-                because we are <span class="fw_bold">fully committed</span> to
-                doing the hard work, doing it right, and bringing results.
+                possible upside for both partners. If we form a partnership,
+                it’s because we are
+                <span class="fw_bold">fully committed</span> to doing the hard
+                work, doing it right, and bringing results.
               </p>
               <p
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
@@ -663,8 +690,9 @@
                 At our core, we are a family-run business,
                 <span class="fw_bold">inspired by generations of retail</span>
                 experience. We strive to do right by our customers, our partner
-                brands, and our team. Why? Because we think that’s the only way to
-                build something that <span class="fw_bold">lasts long-term.</span>
+                brands, and our team. Why? Because we think that’s the only way
+                to build something that
+                <span class="fw_bold">lasts long-term.</span>
               </p>
               <p
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
@@ -701,35 +729,48 @@
                 We’re all looking forward to working with you.
               </p>
             </div>
-            <div data-aos="fade-up"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="1300"
-     data-aos-offset="0"
-     data-aos-duration="1500">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="1300"
+              data-aos-offset="0"
+              data-aos-duration="1500"
+            >
               <img
                 class="mt-sm-5 pt-sm-5 pt-4"
                 src="./assets/images/svg/sign.svg"
                 alt="sign"
               />
-              <p class="mb-0 ff_Gilroy_regular fw_normal fs_base text_white mt-2">
+              <p
+                class="mb-0 ff_Gilroy_regular fw_normal fs_base text_white mt-2"
+              >
                 Steven Hollander
               </p>
               <p class="mb-0 ff_Gilroy_regular fw_normal fs_base text_white">
                 Founder & CEO
               </p>
-              <p
-                style="max-width: 527px"
-                class="ff_Gilroy_medium fw_medium fs_2xl text_white pb-sm-5 mt-sm-4 mt-3 pt-sm-2"
-              >
-                Your products & brand + our custom strategy = everyone's success
-              </p>
+              <div class="position-relative">
+                <img
+                  style="left: 39%; bottom: 15%"
+                  class="position-absolute z_index_2"
+                  src="./assets/images/png/message-center-vector.png"
+                  alt="center"
+                />
+                <p
+                  style="max-width: 527px"
+                  class="ff_Gilroy_medium fw_medium fs_2xl text_white pb-sm-5 mt-sm-4 mt-3 pt-sm-2"
+                >
+                  Your products & brand + our custom strategy = everyone's
+                  success
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ===================================== Amazon ===================================== -->
-    <section class="py-sm-5 pb-5 pb-sm-0 overflow-hidden">
+    <section class="py-sm-5 pb-5 pb-sm-0">
       <div class="container">
         <div class="row justify-content-center position-relative">
           <img
@@ -738,16 +779,20 @@
             alt="amazon-z-icon"
           />
           <img
-            class="position-absolute amaozn_z_icon_right"
+            class="position-absolute amaozn_z_icon_right d-none d-sm-block"
             src="./assets/images/png/amazon-right-z-icon.png"
             alt="amazon-z-icon"
           />
           <div class="col-md-10 bg-black position-relative">
-            <span class="amazon_blue_shadow position-absolute z_index_3"></span>
-            <div class="row z_index_4 position-relative">
+            <span
+              class="amazon_blue_shadow position-absolute z_index_3 d-none d-sm-block"
+            ></span>
+            <div
+              class="row justify-content-between z_index_4 position-relative"
+            >
               <div class="col-sm-6">
                 <div
-                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 overflow-hidden text-center text-sm-start"
+                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 overflow-hidden text-center text-sm-start me-sm-3"
                 >
                   <h3
                     class="ff_Gilroy_semiBold fw_semibold fs_2xxl text_white mb-0 pb-3 amazon_line_height"
@@ -756,7 +801,7 @@
                     part of your sales.
                   </h3>
                   <button
-                    class="discover_btn text_white outline_none rounded-2 ff_Gilroy_medium fw_medium fs_sm mt-4 transition_300"
+                    class="discover_btn text_white outline_none rounded-2 ff_Gilroy_medium fw_medium fs_sm mt-4 transition_300 mb-3"
                   >
                     Discover Why
                   </button>
@@ -764,7 +809,7 @@
               </div>
               <div class="col-sm-6">
                 <div
-                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 mt-3 mt-sm-0 overflow-hidden text-center text-sm-start"
+                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 mt-3 mt-sm-0 overflow-hidden text-center text-sm-start ms-sm-3"
                 >
                   <h3
                     class="ff_Gilroy_semiBold fw_semibold fs_2xxl text_white mb-0 pb-3 amazon_line_height"
@@ -773,7 +818,7 @@
                     partnerships.
                   </h3>
                   <button
-                    class="work_btn text_white outline_none rounded-2 ff_Gilroy_medium fw_medium fs_sm mt-4 transition_300"
+                    class="work_btn text_white outline_none rounded-2 ff_Gilroy_medium fw_medium fs_sm mt-4 transition_300 mb-3"
                   >
                     How We Work
                   </button>
@@ -1259,11 +1304,15 @@
       <div class="container py-sm-5">
         <div class="row justify-content-center border_top_bottom_line my-sm-5">
           <div class="col-lg-10 position-relative">
-            <span class="counter_blue_shadow_center position-absolute z_index_3"></span>
+            <span
+              class="counter_blue_shadow_center position-absolute z_index_3"
+            ></span>
             <div class="text-center z-2 position-relative my-sm-5">
               <div class="row justify-content-between">
                 <div class="col-xl-4 col-lg-3">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
                     <i class="fa fa-user invisible"></i>
                     <svg
                       width="64"
@@ -1312,7 +1361,9 @@
                   </div>
                 </div>
                 <div class="col-lg-4 mt-5 mt-lg-0 between_the_boxes">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
                     <i class="fa fa-code invisible"></i>
                     <svg
                       width="64"
@@ -1396,13 +1447,13 @@
                       </defs>
                     </svg>
                     <h2
-                      class=" ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0"
+                      class="ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0"
                       data-max="100"
                     >
                       %
                     </h2>
                     <h2
-                      class=" ff_Gilroy_regular fw_normal fs_xl text_light_gray pt-2 px-lg-5"
+                      class="ff_Gilroy_regular fw_normal fs_xl text_light_gray pt-2 px-lg-5"
                     >
                       Positive customer feedback
                     </h2>
@@ -1444,15 +1495,16 @@
                         stroke="#02A9F7"
                       />
                     </svg>
-                  <div class="d-flex align-items-center">
-                    <span class=" ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0 me-1">#</span>
+                    <div class="d-flex align-items-center">
+                      <span
+                        class="ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0 me-1"
+                        >#</span
+                      >
                       <h2
-                      class=" ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0"
-                      data-max="633"
-                    >
-                    
-                    </h2>
-                  </div>
+                        class="ff_Gilroy_medium fw_medium fs_5xl mt-2 text-white mb-0"
+                        data-max="633"
+                      ></h2>
+                    </div>
                     <h2
                       class="ff_Gilroy_regular fw_normal fs_xl text_light_gray pt-2"
                     >
@@ -1468,7 +1520,11 @@
     </section>
     <!-- ===================================== Footer ==================================== -->
     <section class="position-relative bg_secondary overflow-hidden">
-      <img class=" position-absolute bottom-0 start-0" src="./assets/images/png/footer-z-icon.png " alt="IMG">
+      <img
+        class="position-absolute bottom-0 start-0"
+        src="./assets/images/png/footer-z-icon.png "
+        alt="IMG"
+      />
       <span class="footer_blue_shadow_left position-absolute z_index_3"></span>
       <span class="footer_blue_shadow_right position-absolute z_index_3"></span>
       <footer
@@ -1517,27 +1573,28 @@
                     Have a question?
                   </p>
                   <ul class="ps-0 mb-0 mt-2">
-                  
-                  <a href="mailto:yourEmail@domain.com"> <li
-                      class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray cursor_pointer footer_link_hover transition_300 d-inline-block" >
-                     <svg
-                        width="17"
-                        height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                    <a href="mailto:yourEmail@domain.com">
+                      <li
+                        class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray cursor_pointer footer_link_hover transition_300 d-inline-block"
                       >
-                        <g opacity="0.7">
-                          <path
-                            d="M14.5078 3.32812H2.50781C2.2426 3.32813 1.98824 3.43348 1.80071 3.62102C1.61317 3.80855 1.50781 4.06291 1.50781 4.32812V12.3281C1.50781 12.5933 1.61317 12.8477 1.80071 13.0352C1.98824 13.2228 2.2426 13.3281 2.50781 13.3281H14.5078C14.773 13.3281 15.0274 13.2228 15.2149 13.0352C15.4025 12.8477 15.5078 12.5933 15.5078 12.3281V4.32812C15.5078 4.06291 15.4025 3.80855 15.2149 3.62102C15.0274 3.43348 14.773 3.32813 14.5078 3.32812ZM13.4078 4.32812L8.50781 7.71812L3.60781 4.32812H13.4078ZM2.50781 12.3281V4.78312L8.22281 8.73812C8.30651 8.79619 8.40595 8.8273 8.50781 8.8273C8.60968 8.8273 8.70911 8.79619 8.79281 8.73812L14.5078 4.78312V12.3281H2.50781Z"
-                            fill="white"
-                          />
-                        </g>
-                      </svg>
-                  
-                      partners@zoplenti.com
-                    </li> 
-                   </a>
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.7">
+                            <path
+                              d="M14.5078 3.32812H2.50781C2.2426 3.32813 1.98824 3.43348 1.80071 3.62102C1.61317 3.80855 1.50781 4.06291 1.50781 4.32812V12.3281C1.50781 12.5933 1.61317 12.8477 1.80071 13.0352C1.98824 13.2228 2.2426 13.3281 2.50781 13.3281H14.5078C14.773 13.3281 15.0274 13.2228 15.2149 13.0352C15.4025 12.8477 15.5078 12.5933 15.5078 12.3281V4.32812C15.5078 4.06291 15.4025 3.80855 15.2149 3.62102C15.0274 3.43348 14.773 3.32813 14.5078 3.32812ZM13.4078 4.32812L8.50781 7.71812L3.60781 4.32812H13.4078ZM2.50781 12.3281V4.78312L8.22281 8.73812C8.30651 8.79619 8.40595 8.8273 8.50781 8.8273C8.60968 8.8273 8.70911 8.79619 8.79281 8.73812L14.5078 4.78312V12.3281H2.50781Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>
+
+                        partners@zoplenti.com
+                      </li>
+                    </a>
                     <li
                       class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray mt-1 cursor_pointer footer_link_hover transition_300 d-inline-block"
                     >
@@ -1577,7 +1634,9 @@
           </div>
         </div>
       </footer>
-      <section class="py-3 z_index_4 position-relative text-center text-sm-start">
+      <section
+        class="py-3 z_index_4 position-relative text-center text-sm-start"
+      >
         <div class="container">
           <div class="d-sm-flex justify-content-between">
             <p class="ff_Montserrat fw_normal fs_base mb-0 text_dark_gray">
@@ -1593,14 +1652,13 @@
       </section>
     </section>
 
-<!-- btop -->
+    <!-- btop -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    >
-  </script>
+    ></script>
     <!-- slick min js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
@@ -1698,8 +1756,6 @@
         });
       });
     </script>
-    </script>
-
     <script>
       const OpenNav = document.getElementById("OpenNav");
       function menu() {
@@ -1708,7 +1764,7 @@
         document.classList.toggle("cross");
       }
     </script>
-<!-- backToTop -->
+    <!-- backToTop -->
     <script>
       window.addEventListener("scroll", function () {
         var backToTopButton = document.getElementById("back_to_top");
@@ -1736,7 +1792,7 @@
     <!-- aos-script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
+      AOS.init({ once: true });
+    </script>
   </body>
 </html>

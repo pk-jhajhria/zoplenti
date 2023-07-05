@@ -95,9 +95,17 @@
   padding-right: 15px;
   padding-left: 15px;
 }
-.nav_btn:hover {
+#nav .nav_btn:hover svg path {
+  fill: white !important;
   box-shadow: 0px 0px 21px 0px #02a9f782;
-  background-color: #070521;
+  background-color: #02a9f7 !important;
+  border: 1px solid transparent;
+  transition: all 100ms ease-in-out !important;
+}
+.nav_btn:hover {
+  fill: white !important;
+  box-shadow: 0px 0px 11px 0px #02a9f782;
+  background-color: #02a9f7 !important;
   border: 1px solid transparent;
 }
 .line_1 {
@@ -298,11 +306,11 @@
 }
 .amazon_blue_shadow {
   background: #02a9f7;
-  filter: blur(250px);
-  width: 300px;
-  height: 250px;
-  bottom: -80%;
-  left: 45%;
+  filter: blur(180px);
+  width: 350px;
+  height: 150px;
+  bottom: 10%;
+  left: 40%;
 }
 .discover_blue_shadow_left {
   background: #02a9f7;
