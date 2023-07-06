@@ -191,8 +191,8 @@
   right: 22%;
 }
 .trusted_logo {
-  width: 135px;
-  height: 50px;
+  width: 135px !important;
+  height: 50px !important;
 }
 .trusted_logo_hover:hover {
   transform: translateY(-20%);
