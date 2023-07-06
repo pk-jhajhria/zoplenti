@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Zoplanti</title>
+    <meta name="title" content="Zoplanti" />
+    <meta name="description" content="Trusted By Leading Brands" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io" />
+    <meta property="og:title" content="Zoplanti" />
+    <meta property="og:description" content="Trusted By Leading Brands" />
+    <meta
+      property="og:image"
+      content="https://thumbs2.imgbox.com/77/fa/7ATNtF5O_t.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io" />
+    <meta property="twitter:title" content="Zoplanti" />
+    <meta property="twitter:description" content="Trusted By Leading Brands" />
+    <meta
+      property="twitter:image"
+      content="https://thumbs2.imgbox.com/77/fa/7ATNtF5O_t.png"
+    />
     <meta charset="utf-8" />
     <link
       rel="shortcut icon"
@@ -8,7 +31,7 @@
       type="image/x-icon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ZOPLENTI</title>
+    <title>Zoplanti</title>
     <link rel="stylesheet" href="assets/css/App.css" />
     <link rel="stylesheet" href="assets/css/Root.css" />
     <link
@@ -37,13 +60,21 @@
     />
   </head>
   <body class="bg_dark">
-    <a id="back_to_top" href="#"
+    <div
+      class="preloader d-flex position-fixed min-vh-100 align-items-center justify-content-center w-100 body_tag"
+    >
+      <div class="preloaderImg">
+        <img src="./assets/images/svg/nav-logo.svg" alt="page_logo" />
+      </div>
+    </div>
+    <a class="backtop_icon" id="back_to_top" href="#"
       ><img
         style="width: 100%"
         class="mb-1"
         src="./assets/images/png/btop.png"
         alt="icon"
     /></a>
+
     <!-- ======================================= NavBar =============================== -->
     <section class="hero_bg_img min_vh_100 d-flex flex-column">
       <nav class="py-lg-4 py-3 position-relative" id="nav">
@@ -354,7 +385,7 @@
               class="text-center mt-5 z_index_4 position-relative"
             >
               <img
-                class="cursor_pointer down_arrow_btn"
+                class="cursor_pointer down_arrow_btn down_icon"
                 src="./assets/images/svg/down-arrow.svg"
                 alt="down_arrow"
             /></a>
@@ -699,29 +730,31 @@
               >
                 If that’s what you look for in a retail partner, I hope you’ll
                 take the time to read more
-                <span class="position-relative">
+                <span class="position-relative d-inline-block cursor_pointer">
+                  <img
+                    class="position-absolute about_cursor_img_position"
+                    src="./assets/images/svg/cursor_img.svg"
+                    alt="cursor_img"
+                  />
                   <a
                     class="text_bg_color rounded-2 px-1 text_white white_space_nowrap"
                     href="#"
                     >about us</a
                   >
+                </span>
+                and
+                <span class="position-relative d-inline-block cursor_pointer">
                   <img
-                    class="position-absolute about_cursor_img_position"
+                    class="position-absolute cursor_img_position"
                     src="./assets/images/svg/cursor_img.svg"
                     alt="cursor_img"
-                /></span>
-                and
-                <span class="position-relative">
+                  />
                   <a
                     class="text_bg_color rounded-2 px-1 text_white white_space_nowrap"
                     href="#"
                     >how we work.</a
                   >
-                  <img
-                    class="position-absolute cursor_img_position"
-                    src="./assets/images/svg/cursor_img.svg"
-                    alt="cursor_img"
-                /></span>
+                </span>
               </p>
               <p
                 class="ff_Gilroy_regular fw_normal fs_2xl text_white mb-0 me-sm-5 mt-2 pt-1"
@@ -792,7 +825,7 @@
             >
               <div class="col-sm-6">
                 <div
-                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 overflow-hidden text-center text-sm-start me-sm-3"
+                  class="amazon_box px-md-4 mx-4 px-3 py-md-5 py-4 rounded-3 overflow-hidden text-center text-sm-start me-sm-3"
                 >
                   <h3
                     class="ff_Gilroy_semiBold fw_semibold fs_2xxl text_white mb-0 pb-3 amazon_line_height"
@@ -809,7 +842,7 @@
               </div>
               <div class="col-sm-6">
                 <div
-                  class="amazon_box px-md-4 px-3 py-md-5 py-4 rounded-3 mt-3 mt-sm-0 overflow-hidden text-center text-sm-start ms-sm-3"
+                  class="amazon_box px-md-4 mx-4 px-3 py-md-5 py-4 rounded-3 mt-3 mt-sm-0 overflow-hidden text-center text-sm-start ms-sm-3"
                 >
                   <h3
                     class="ff_Gilroy_semiBold fw_semibold fs_2xxl text_white mb-0 pb-3 amazon_line_height"
@@ -830,7 +863,11 @@
       </div>
     </section>
     <!-- ==================================== Slider ===================================== -->
-    <section class="my-sm-5 py-sm-5 bg-black position-relative" id="slider">
+    <section
+      id="slider"
+      class="my-sm-5 py-sm-5 bg-black position-relative"
+      id="slider"
+    >
       <img
         style="top: 60%"
         class="position-absolute start-0 d-none d-sm-block"
@@ -850,39 +887,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 position-relative">
             <svg
-              class="position-absolute slider_left_arrow ms-4 d-none d-lg-flex translate-middle-y prev-btn cursor_pointer z_index_5"
-              width="42"
-              height="42"
-              viewBox="0 0 42 42"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="-0.5"
-                y="0.5"
-                width="40"
-                height="40"
-                rx="20"
-                transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                fill="white"
-                fill-opacity="0.1"
-              />
-              <path
-                d="M24.8594 26.6289C25.0885 26.3997 25.2031 26.1081 25.2031 25.7539C25.2031 25.3997 25.0885 25.1081 24.8594 24.8789L19.9844 20.0039L24.8594 15.1289C25.0885 14.8997 25.2031 14.6081 25.2031 14.2539C25.2031 13.8997 25.0885 13.6081 24.8594 13.3789C24.6302 13.1497 24.3385 13.0352 23.9844 13.0352C23.6302 13.0352 23.3385 13.1497 23.1094 13.3789L17.3594 19.1289C17.2344 19.2539 17.1456 19.3893 17.0931 19.5352C17.0406 19.681 17.0148 19.8372 17.0156 20.0039C17.0156 20.1706 17.0419 20.3268 17.0944 20.4727C17.1469 20.6185 17.2352 20.7539 17.3594 20.8789L23.1094 26.6289C23.3385 26.8581 23.6302 26.9727 23.9844 26.9727C24.3385 26.9727 24.6302 26.8581 24.8594 26.6289Z"
-                fill="white"
-              />
-              <rect
-                x="-0.5"
-                y="0.5"
-                width="40"
-                height="40"
-                rx="20"
-                transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                stroke="white"
-              />
-            </svg>
-            <svg
-              class="position-absolute slider_right_arrow me-4 d-none d-lg-flex translate-middle-y next-btn cursor_pointer z_index_5"
+              class="position-absolute slider_left_arrow top-50 start-0 d-none d-md-flex translate-middle-y Previous_btn cursor_pointer z_index_5"
               width="42"
               height="42"
               viewBox="0 0 42 42"
@@ -891,15 +896,42 @@
             >
               <rect
                 x="0.734375"
-                y="0.00390625"
-                width="41"
-                height="41"
+                y="0.50390625"
+                width="40"
+                height="40"
                 rx="20.5"
+                fill="transparent"
+                stroke="white"
+              />
+
+              <path
+                transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+                d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
                 fill="#02A9F7"
               />
+            </svg>
+
+            <svg
+              class="position-absolute slider_right_arrow top-50 end-0 d-none d-md-flex translate-middle-y Next_Btn cursor_pointer z_index_5"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.734375"
+                y="0.50390625"
+                width="40"
+                height="40"
+                rx="20.5"
+                fill="transparent"
+                stroke="white"
+              />
+
               <path
                 d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
-                fill="white"
+                fill="#02A9F7"
               />
             </svg>
             <div class="responsive mx-auto">
@@ -1081,10 +1113,16 @@
                   aria-labelledby="flush-headingOne"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body pt-0 px-0 text_white">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div
+                    class="accordion-body pt-0 px-0 text_white ff_Gilroy_regular fw_normal fs_base"
+                  >
+                    We are a top Amazon reseller. That means wepurchase your
+                    productsin bulk, and sell them to our customers, just like
+                    any other retailer. Our model is simple: we partner up with
+                    market leading brands, and create a custom strategy to
+                    improve the brand's Amazon results. Our strategy is based on
+                    both your goals and our know-how in online retail. Discover
+                    the details of how we work.
                   </div>
                 </div>
               </div>
@@ -1112,10 +1150,18 @@
                   aria-labelledby="flush-headingTwo"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body pt-0 px-0 text_white">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div
+                    class="accordion-body pt-0 px-0 text_white ff_Gilroy_regular fw_normal fs_base"
+                  >
+                    Yes. We send our partners regular purchase orders. We carry
+                    between one and six months of inventory at a time depending
+                    on the SKU. Our replenishment strategy is based on both
+                    market factors (demand, seasonality, promotions, etc) and
+                    what works best for you (your lead times and logistics). In
+                    any case, wealways purchase stock outright and ship it
+                    ourselves. We never require you to dropship directly to
+                    customers or sell on consignment. To understand the details
+                    of our model, discover how we work.
                   </div>
                 </div>
               </div>
@@ -1144,10 +1190,16 @@
                   aria-labelledby="flush-headingThree"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body pt-0 px-0 text_white">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div
+                    class="accordion-body pt-0 px-0 text_white ff_Gilroy_regular fw_normal fs_base"
+                  >
+                    In a word, we look for opportunity. We think a partnership
+                    should benefit everyone, and so we focus on brands we can
+                    help grow. Generally, we look for three things: A solid
+                    reputation for quality and an established sales history. A
+                    knack for great communication and streamlining operations. A
+                    strong ambition to grow and dominate your market. If that’s
+                    you, you should read more about how we work.
                   </div>
                 </div>
               </div>
@@ -1176,10 +1228,23 @@
                   aria-labelledby="flush-headingFour"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body pt-0 px-0 text_white">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div
+                    class="accordion-body pt-0 px-0 text_white ff_Gilroy_regular fw_normal fs_base"
+                  >
+                    If you are dissatisfied with your current results on Amazon,
+                    you are probably wary of resellers altogether. We understand
+                    that. But we're not just a reseller. We're focused on
+                    helping our partner brands grow beyond your current level of
+                    online sales — all while boosting your brand reputation and
+                    making your (and our) customers happy. Here’s the three main
+                    things that differentiate us from most Amazon resellers. We
+                    develop and deploy a custom strategy for each brand we work
+                    with, with the goal of enhancing sales, ultimately growing
+                    your brand. We have a strict customer satisfaction policy
+                    that ensures your brand’s customers are satisfied,
+                    protecting your brand equity. We are easy to work with and
+                    always follow reseller and MAP policies. You can read more
+                    about it on our why page and our how we work page.
                   </div>
                 </div>
               </div>
@@ -1208,10 +1273,22 @@
                   aria-labelledby="flush-headingFive"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body pt-0 px-0 text_white">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div
+                    class="accordion-body pt-0 px-0 text_white ff_Gilroy_regular fw_normal fs_base"
+                  >
+                    For most brands, selling directly to Amazon is not a good
+                    idea. They will offer you a standard, unfavorable contract.
+                    They will not respect your MAP and retailer policies. They
+                    will not invest in marketing your product. To them, you are
+                    just one of the brands they carry, same as all your
+                    competitors. Directly selling your products as a first party
+                    seller on Amazon is also not ideal for most brands. It
+                    forces you to invest time and resources building an online
+                    sales division, with all the learning curve (and potentially
+                    costly mistakes) that comes with it. For most brands, that’s
+                    an unacceptable diversion from what they do best: create
+                    great products. Read more about why Zoplenti is the best
+                    distribution method for your brand.
                   </div>
                 </div>
               </div>
@@ -1239,10 +1316,15 @@
                   aria-labelledby="flush-headingSix"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body pt-0 px-0 text_white">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div
+                    class="accordion-body pt-0 px-0 text_white ff_Gilroy_regular fw_normal fs_base"
+                  >
+                    In a nutshell, we think online shopping should have the same
+                    level of service you get in your trusted brick and mortar
+                    store. In practice, this means we have a no questions asked
+                    100% refund policy in order to protect our partner brands
+                    from negative customer experiences, and we always go the
+                    extra mile to make sure every customer is happy.
                   </div>
                 </div>
               </div>
@@ -1270,10 +1352,17 @@
                   aria-labelledby="flush-headingSeven"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body pt-0 px-0 text_white">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div
+                    class="accordion-body pt-0 px-0 text_white ff_Gilroy_regular fw_normal fs_base"
+                  >
+                    The first step is to fill out our partnerships form to
+                    schedule a call with our team. After we get to know each
+                    other and decide to work together, here’s what happens: We
+                    start with a test PO, according to your MOQ policies to work
+                    through logistics. We develop a custom strategy and start
+                    working on your presence on Amazon. We develop a
+                    replenishment strategy and keep the communication channels
+                    open to evaluate results together.
                   </div>
                 </div>
               </div>
@@ -1595,25 +1684,28 @@
                         partners@zoplenti.com
                       </li>
                     </a>
-                    <li
-                      class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray mt-1 cursor_pointer footer_link_hover transition_300 d-inline-block"
-                    >
-                      <svg
-                        width="17"
-                        height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                    <li>
+                      <a
+                        href="tel:  833-838-9101"
+                        class="mb-0 ff_Gilroy_regular fw_normal fs_base mb-0 text_gray mt-1 cursor_pointer footer_link_hover transition_300 d-inline-block"
                       >
-                        <g opacity="0.7">
-                          <path
-                            d="M14.4059 10.3099L11.4616 8.9905L11.4534 8.98675C11.3006 8.92137 11.1338 8.89513 10.9683 8.91041C10.8028 8.92569 10.6436 8.982 10.5053 9.07425C10.489 9.085 10.4734 9.09669 10.4584 9.10925L8.93719 10.4061C7.97344 9.938 6.97844 8.9505 6.51032 7.99925L7.80907 6.45487C7.82157 6.43925 7.83344 6.42362 7.84469 6.40675C7.93496 6.26881 7.98973 6.1107 8.00412 5.94648C8.01852 5.78226 7.99209 5.61703 7.92719 5.4655V5.458L6.60407 2.50862C6.51828 2.31066 6.37077 2.14576 6.18356 2.03852C5.99635 1.93129 5.77948 1.88747 5.56532 1.91362C4.71842 2.02507 3.94106 2.44098 3.3784 3.08368C2.81575 3.72639 2.50629 4.55193 2.50782 5.40612C2.50782 10.3686 6.54532 14.4061 11.5078 14.4061C12.362 14.4077 13.1876 14.0982 13.8303 13.5355C14.473 12.9729 14.8889 12.1955 15.0003 11.3486C15.0265 11.1345 14.9828 10.9177 14.8757 10.7305C14.7686 10.5433 14.6038 10.3958 14.4059 10.3099ZM11.5078 13.4061C9.3868 13.4038 7.35331 12.5602 5.85352 11.0604C4.35373 9.56063 3.51013 7.52714 3.50782 5.40612C3.50547 4.7958 3.72535 4.2055 4.1264 3.74544C4.52746 3.28538 5.08226 2.98704 5.68719 2.90612C5.68695 2.90862 5.68695 2.91113 5.68719 2.91362L6.99969 5.85112L5.70782 7.39737C5.69471 7.41246 5.68279 7.42855 5.67219 7.4455C5.57814 7.58982 5.52296 7.756 5.51201 7.92791C5.50106 8.09983 5.53471 8.27166 5.60969 8.42675C6.17594 9.58487 7.34282 10.743 8.51344 11.3086C8.66967 11.3829 8.8425 11.4154 9.01503 11.4029C9.18757 11.3904 9.35392 11.3334 9.49782 11.2374C9.51386 11.2266 9.5293 11.2149 9.54407 11.2024L11.0634 9.90612L14.0009 11.2217H14.0078C13.9279 11.8275 13.63 12.3835 13.1699 12.7855C12.7097 13.1876 12.1189 13.4082 11.5078 13.4061Z"
-                            fill="white"
-                          />
-                        </g>
-                      </svg>
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.7">
+                            <path
+                              d="M14.4059 10.3099L11.4616 8.9905L11.4534 8.98675C11.3006 8.92137 11.1338 8.89513 10.9683 8.91041C10.8028 8.92569 10.6436 8.982 10.5053 9.07425C10.489 9.085 10.4734 9.09669 10.4584 9.10925L8.93719 10.4061C7.97344 9.938 6.97844 8.9505 6.51032 7.99925L7.80907 6.45487C7.82157 6.43925 7.83344 6.42362 7.84469 6.40675C7.93496 6.26881 7.98973 6.1107 8.00412 5.94648C8.01852 5.78226 7.99209 5.61703 7.92719 5.4655V5.458L6.60407 2.50862C6.51828 2.31066 6.37077 2.14576 6.18356 2.03852C5.99635 1.93129 5.77948 1.88747 5.56532 1.91362C4.71842 2.02507 3.94106 2.44098 3.3784 3.08368C2.81575 3.72639 2.50629 4.55193 2.50782 5.40612C2.50782 10.3686 6.54532 14.4061 11.5078 14.4061C12.362 14.4077 13.1876 14.0982 13.8303 13.5355C14.473 12.9729 14.8889 12.1955 15.0003 11.3486C15.0265 11.1345 14.9828 10.9177 14.8757 10.7305C14.7686 10.5433 14.6038 10.3958 14.4059 10.3099ZM11.5078 13.4061C9.3868 13.4038 7.35331 12.5602 5.85352 11.0604C4.35373 9.56063 3.51013 7.52714 3.50782 5.40612C3.50547 4.7958 3.72535 4.2055 4.1264 3.74544C4.52746 3.28538 5.08226 2.98704 5.68719 2.90612C5.68695 2.90862 5.68695 2.91113 5.68719 2.91362L6.99969 5.85112L5.70782 7.39737C5.69471 7.41246 5.68279 7.42855 5.67219 7.4455C5.57814 7.58982 5.52296 7.756 5.51201 7.92791C5.50106 8.09983 5.53471 8.27166 5.60969 8.42675C6.17594 9.58487 7.34282 10.743 8.51344 11.3086C8.66967 11.3829 8.8425 11.4154 9.01503 11.4029C9.18757 11.3904 9.35392 11.3334 9.49782 11.2374C9.51386 11.2266 9.5293 11.2149 9.54407 11.2024L11.0634 9.90612L14.0009 11.2217H14.0078C13.9279 11.8275 13.63 12.3835 13.1699 12.7855C12.7097 13.1876 12.1189 13.4082 11.5078 13.4061Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>
 
-                      833-838-9101
+                        833-838-9101
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -1669,9 +1761,9 @@
     <script>
       $(".responsive").slick({
         dots: false,
-        autoplay: true,
         arrows: false,
         infinite: true,
+        autoplay: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -1706,12 +1798,13 @@
           },
         ],
       });
-
-      $(".prev-btn").click(function () {
+    </script>
+    <script>
+      $(".Previous_btn").click(function () {
         $(".responsive").slick("slickPrev");
       });
 
-      $(".next-btn").click(function () {
+      $(".Next_Btn").click(function () {
         $(".responsive").slick("slickNext");
       });
     </script>
@@ -1789,6 +1882,18 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- Preloader -->
+    <script>
+      let preLoader = document.querySelector(".preloader");
+
+      let html = document.getElementsByClassName(".body_tag");
+
+      setTimeout(() => {
+        preLoader.style.visibility = "hidden";
+
+        $(".body_tag").removeClass("overflow_hidden");
+      }, 3500);
+    </script>
     <!-- aos-script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

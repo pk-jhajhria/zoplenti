@@ -385,6 +385,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#slider svg path {
+  fill: #ffffff !important;
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+
+#slider svg:hover rect {
+  fill: #02a9f7 !important;
+  z-index: 0 !important;
+  position: relative;
+  stroke: none;
+}
+
 /* ==================================== Faq =================================== */
 .accordion {
   --bs-accordion-btn-color: #ffffff !important;
@@ -660,8 +674,8 @@
     top: 50%;
   }
   .about_cursor_img_position {
-    bottom: 15px;
-    right: -75px;
+    bottom: -10px;
+    right: 0px;
   }
   .dashed_line {
     width: 100%;
@@ -735,4 +749,60 @@
 
 #back-to-top:hover {
   opacity: 1;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* preloader */
+.preloader {
+  background-color: #031427;
+  z-index: 1000;
+}
+
+.preloaderImg {
+  animation: preloader_img 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes preloader_img {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+.backtop_icon {
+  animation: bactop_icon 3s infinite;
+}
+
+@keyframes bactop_icon {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-20%);
+  }
+}
+.down_icon {
+  animation: down_icon 2s infinite;
+}
+
+@keyframes down_icon {
+  0% {
+    transform: translateY(-5%);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
 }
