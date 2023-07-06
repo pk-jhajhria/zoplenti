@@ -198,7 +198,7 @@
   transform: translateY(-20%);
 }
 .slider_autoplay {
-  animation: autoplay 100s linear infinite alternate;
+  animation: autoplay 100s linear infinite;
 }
 
 @keyframes autoplay {
