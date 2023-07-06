@@ -1,7 +1,26 @@
-.lottie_img {
-  background-image: url(../images/png/hero-blue-fire.png);
-  width: 100%;
-  min-height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.trusted_logo {
+  width: 135px !important;
+  height: 50px !important;
+}
+.trusted_logo_hover:hover {
+  transform: translateY(-20%);
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.transition_300 {
+  transition: all 300ms ease-in-out;
+}
+.slider_autoplay {
+  display: flex;
+  animation: autoplay 53s linear infinite;
+}
+
+@keyframes autoplay {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
