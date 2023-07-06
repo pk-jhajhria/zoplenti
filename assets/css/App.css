@@ -194,8 +194,11 @@
   width: 135px;
   height: 50px;
 }
+.trusted_logo_hover:hover {
+  transform: translateY(-20%);
+}
 .slider_autoplay {
-  animation: autoplay 12s linear infinite;
+  animation: autoplay 100s linear infinite;
 }
 
 @keyframes autoplay {
@@ -727,7 +730,7 @@
     background-repeat: no-repeat;
     background-size: 100% 60%;
     width: 100%;
-    bottom: -150%;
+    bottom: -93%;
   }
 }
 /* backtop */

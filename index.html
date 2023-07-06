@@ -64,7 +64,15 @@
       class="preloader d-flex position-fixed min-vh-100 align-items-center justify-content-center w-100 body_tag"
     >
       <div class="preloaderImg">
-        <img src="./assets/images/svg/nav-logo.svg" alt="page_logo" />
+        <lottie-player
+          class="hero_icon_custom z_index_5"
+          src="./assets/images/z.json"
+          background="transparent"
+          speed="1"
+          style="width: 138px; height: 111px"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </div>
     <a class="backtop_icon" id="back_to_top" href="#"
@@ -317,14 +325,23 @@
               <div
                 class="d-flex flex-column align-items-center justify-content-center position-relative after_hero_bg_circle"
               >
-                <img
+                <!-- <img
                   class="hero_icon_custom z_index_5"
                   src="./assets/images/png/hero-blue-fire.png"
                   alt="fire"
-                />
+                /> -->
+                <lottie-player
+                  class="hero_icon_custom z_index_5"
+                  src="./assets/images/z.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 138px; height: 111px"
+                  loop
+                  autoplay
+                ></lottie-player>
               </div>
               <div
-                class="row justify-content-between mt-5 rounded-3 counter_box"
+                class="row justify-content-between mt-4 rounded-3 counter_box"
               >
                 <div class="col-4 text-center text-sm-start">
                   <div
@@ -405,93 +422,204 @@
           </h2>
         </div>
         <div
-          class="d-flex justify-content-between align-items-center mt-5 slider_autoplay gap-5"
+          class="d-flex justify-content-between align-items-center mt-5 slider_autoplay"
         >
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-1.png"
-            alt="trusted-1"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-2.png"
-            alt="trusted-2"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-3.png"
-            alt="trusted-3"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-4.png"
-            alt="trusted-4"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-5.png"
-            alt="trusted-5"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-6.png"
-            alt="trusted-6"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-7.png"
-            alt="trusted-7"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-8.png"
-            alt="trusted-8"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-9.png"
-            alt="trusted-9"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-10.png"
-            alt="trusted-10"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-11.png"
-            alt="trusted-11"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-12.png"
-            alt="trusted-12"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-13.png"
-            alt="trusted-13"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-14.png"
-            alt="trusted-14"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-15.png"
-            alt="trusted-15"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-16.png"
-            alt="trusted-16"
-          />
-          <img
-            class="trusted_logo cursor_pointer"
-            src="./assets/images/png/trusted-17.png"
-            alt="trusted-17"
-          />
+          <div class="responsive">
+            <div
+              class="d-flex justify-content-between align-items-center mt-5 slider_autoplay gap-5"
+            >
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-1.png"
+                alt="trusted-1"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-2.png"
+                alt="trusted-2"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-3.png"
+                alt="trusted-3"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-4.png"
+                alt="trusted-4"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-5.png"
+                alt="trusted-5"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-6.png"
+                alt="trusted-6"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-7.png"
+                alt="trusted-7"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-8.png"
+                alt="trusted-8"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-9.png"
+                alt="trusted-9"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-10.png"
+                alt="trusted-10"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-11.png"
+                alt="trusted-11"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-12.png"
+                alt="trusted-12"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-13.png"
+                alt="trusted-13"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-14.png"
+                alt="trusted-14"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-15.png"
+                alt="trusted-15"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-16.png"
+                alt="trusted-16"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-17.png"
+                alt="trusted-17"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-16.png"
+                alt="trusted-16"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-17.png"
+                alt="trusted-17"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-1.png"
+                alt="trusted-1"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-2.png"
+                alt="trusted-2"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-3.png"
+                alt="trusted-3"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-4.png"
+                alt="trusted-4"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-5.png"
+                alt="trusted-5"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-6.png"
+                alt="trusted-6"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-7.png"
+                alt="trusted-7"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-8.png"
+                alt="trusted-8"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-9.png"
+                alt="trusted-9"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-10.png"
+                alt="trusted-10"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-11.png"
+                alt="trusted-11"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-12.png"
+                alt="trusted-12"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-13.png"
+                alt="trusted-13"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-14.png"
+                alt="trusted-14"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-15.png"
+                alt="trusted-15"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-16.png"
+                alt="trusted-16"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-17.png"
+                alt="trusted-17"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-16.png"
+                alt="trusted-16"
+              />
+              <img
+                class="trusted_logo cursor_pointer trusted_logo_hover transition_300"
+                src="./assets/images/png/trusted-17.png"
+                alt="trusted-17"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -865,7 +993,7 @@
     <!-- ==================================== Slider ===================================== -->
     <section
       id="slider"
-      class="my-sm-5 py-sm-5 bg-black position-relative"
+      class="mt-sm-5 pt-sm-5 bg-black position-relative"
       id="slider"
     >
       <img
@@ -1894,6 +2022,8 @@
         $(".body_tag").removeClass("overflow_hidden");
       }, 3500);
     </script>
+    <!-- lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- aos-script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
