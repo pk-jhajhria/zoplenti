@@ -177,7 +177,7 @@
     --fs-2xxl: 23px;
     --fs-3xl: 34px;
     --fs-3xxl: 38px;
-    --fs-4xl: 48px;
+    --fs-4xl: 40px;
     --fs-5xl: 54px;
   }
 }
@@ -185,15 +185,15 @@
   :root {
     /* font-size */
     --fs-xsm: 14px;
-    --fs-base: 16px;
+    --fs-base: 15px;
     --fs-sm: 18px;
     --fs-md: 20px;
     --fs-xl: 22px;
     --fs-2xl: 24px;
-    --fs-2xxl: 20px;
+    --fs-2xxl: 19px;
     --fs-3xl: 34px;
     --fs-3xxl: 38px;
-    --fs-4xl: 48px;
+    --fs-4xl: 40px;
     --fs-5xl: 54px;
   }
 }
@@ -210,6 +210,6 @@
     --fs-3xl: 34px;
     --fs-3xxl: 30px;
     --fs-4xl: 32px;
-    --fs-5xl: 54px;
+    --fs-5xl: 44px;
   }
 }

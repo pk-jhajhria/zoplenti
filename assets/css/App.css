@@ -404,6 +404,7 @@
 
 /* ==================================== Faq =================================== */
 .accordion {
+  --bs-accordion-btn-icon-width: 1.15rem !important;
   --bs-accordion-btn-color: #ffffff !important;
   --bs-accordion-btn-bg: #000000 !important;
   --bs-accordion-btn-focus-box-shadow: transparent !important;
@@ -418,6 +419,9 @@
 }
 .faq_bg_hover:hover {
   background-color: #2b3940a5 !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/svg/minusAccordian.svg) !important;
 }
 /* ================================== Counter =============================== */
 .counter_blue_shadow_center {
@@ -537,6 +541,18 @@
   }
 }
 @media (max-width: 1200px) {
+  .amaozn_z_icon_left {
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12% !important;
+  }
+  .amaozn_z_icon_right {
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12% !important;
+  }
   .left_trusted_line::after {
     content: "";
     position: absolute;
@@ -559,6 +575,18 @@
   }
 }
 @media (max-width: 992px) {
+  .amaozn_z_icon_left {
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12% !important;
+  }
+  .amaozn_z_icon_right {
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12% !important;
+  }
   .amazon_line_height {
     line-height: 30.8px;
   }
@@ -595,8 +623,51 @@
   .ShowNav {
     left: 0% !important;
   }
+  .message_bg {
+    background-image: none;
+    background-color: #002334 !important;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #0173a9;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 768px) {
+  .slick-dots {
+    position: absolute;
+    bottom: 15px !important;
+    display: block !important;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .work_btn {
+    box-shadow: 0px 0px 12.003801345825195px 0px #02a9f782;
+    background-color: #02a9f7;
+    border: 1px solid #02a9f7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .discover_btn {
+    box-shadow: 0px 0px 12.003801345825195px 0px #02a9f782;
+    background-color: #070521;
+    border: 1px solid #02a9f7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .z_icon_custom {
+    bottom: 0px !important;
+    right: 0% !important;
+  }
+  .w_150 {
+    width: 150px !important;
+  }
   .slider_blue_shadow {
     background: #02a9f7;
     filter: blur(250px);
@@ -650,16 +721,38 @@
     width: 100%;
     bottom: -80%;
   }
-  .message_bg {
-    background-image: none;
-    background-color: #002334 !important;
-    height: 100%;
-    width: 100%;
-    border: 2px solid #0173a9;
-    border-radius: 10px;
+
+  .amazon_blue_shadow {
+    background: #02a9f7;
+    filter: blur(180px);
+    width: 290px;
+    height: 150px;
+    bottom: 15%;
+    left: 40%;
+  }
+  .white_dot {
+    background-color: #fff;
+    height: 6px;
+    width: 18px;
+    border-radius: 100%;
   }
 }
 @media (max-width: 576px) {
+  .w_100 {
+    width: 100px !important;
+  }
+  .amazon_blue_shadow {
+    background: #02a9f7;
+    filter: blur(180px);
+    width: 190px;
+    height: 150px;
+    bottom: 15%;
+    left: 40%;
+  }
+  .z_icon_custom {
+    bottom: 30px !important;
+  }
+
   .slider_blue_shadow {
     background: #02a9f7;
     filter: blur(250px);
